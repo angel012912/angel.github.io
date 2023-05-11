@@ -1,0 +1,23 @@
+.container-scroll, .container-scroll .item{
+    box-sizing: border-box;
+}
+
+.container-scroll{
+    display: flex;
+    overflow: scroll;
+    padding: 24px;
+    width: 40%;
+    height: 400px;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 24px;
+    border-radius: 8px;
+    gap: 12px;
+}
+
+.container-scroll .item{
+    flex: 0 0 100%;
+    padding: 24px;
+    border-radius: 8px;
+    scroll-snap-align: start;
+    background-color: wheat;
+}

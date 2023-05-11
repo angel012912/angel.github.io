@@ -1,23 +1,23 @@
-:root{
+:root {
   --primary-color: #0563bb;
 }
 
 /*-----------------------------
-# custom scrollbar styling 
-------------------------------*/
+  # custom scrollbar styling 
+  ------------------------------*/
 *::-webkit-scrollbar-track {
-	border-radius: 8px;
-	background-color: rgb(255, 255, 255);
+  border-radius: 8px;
+  background-color: rgb(255, 255, 255);
 }
 
 *::-webkit-scrollbar {
   width: 10px;
-	background-color: rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
 }
 
 *::-webkit-scrollbar-thumb {
   border-radius: 10px;
-	background-color: #067ded
+  background-color: #067ded;
 }
 
 body {
@@ -38,20 +38,25 @@ a:hover {
   text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Raleway", sans-serif;
 }
 
 button {
-  background-color: #0563bb;  
-  border-radius: 30px; 
-  text-align: center; 
-  color: white; 
+  background-color: #0563bb;
+  border-radius: 30px;
+  text-align: center;
+  color: white;
 }
 
 /*--------------------------------------------------------------
-# Back to top button
---------------------------------------------------------------*/
+  # Back to top button
+  --------------------------------------------------------------*/
 .back-to-top {
   position: fixed;
   display: none;
@@ -80,8 +85,8 @@ button {
 }
 
 /*--------------------------------------------------------------
-# Preloader
---------------------------------------------------------------*/
+  # Preloader
+  --------------------------------------------------------------*/
 #preloader {
   position: fixed;
   top: 0;
@@ -127,8 +132,8 @@ button {
 }
 
 /*--------------------------------------------------------------
-# Disable aos animation delay on mobile devices
---------------------------------------------------------------*/
+  # Disable aos animation delay on mobile devices
+  --------------------------------------------------------------*/
 @media screen and (max-width: 768px) {
   [data-aos-delay] {
     transition-delay: 0 !important;
@@ -136,8 +141,8 @@ button {
 }
 
 /*--------------------------------------------------------------
-# Header
---------------------------------------------------------------*/
+  # Header
+  --------------------------------------------------------------*/
 #header {
   position: fixed;
   top: 0;
@@ -165,8 +170,8 @@ button {
 }
 
 /*--------------------------------------------------------------
-# Navigation Menu
---------------------------------------------------------------*/
+  # Navigation Menu
+  --------------------------------------------------------------*/
 /* Desktop Navigation */
 .nav-menu * {
   margin: 0;
@@ -214,21 +219,27 @@ button {
   }
 }
 
-.nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
+.nav-menu a:hover,
+.nav-menu .active > a,
+.nav-menu li:hover > a {
   color: #fff;
   background: #0563bb;
 }
 
-.nav-menu a:hover span, .nav-menu .active > a span, .nav-menu li:hover > a span {
+.nav-menu a:hover span,
+.nav-menu .active > a span,
+.nav-menu li:hover > a span {
   color: #fff;
 }
 
-.nav-menu a:hover, .nav-menu li:hover > a {
+.nav-menu a:hover,
+.nav-menu li:hover > a {
   width: 100%;
   color: #fff;
 }
 
-.nav-menu a:hover span, .nav-menu li:hover > a span {
+.nav-menu a:hover span,
+.nav-menu li:hover > a span {
   display: block;
 }
 
@@ -265,12 +276,12 @@ button {
 }
 
 /*--------------------------------------------------------------
-# Hero Section
---------------------------------------------------------------*/
+  # Hero Section
+  --------------------------------------------------------------*/
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/hero-bg.jpg") top left no-repeat;
+  background: url("../assets/img/hero-bg.jpg") top left no-repeat;
   background-size: cover;
   position: relative;
   background-position: center center;
@@ -346,8 +357,8 @@ button {
 }
 
 /*--------------------------------------------------------------
-# Sections General
---------------------------------------------------------------*/
+  # Sections General
+  --------------------------------------------------------------*/
 section {
   padding: 60px 0;
   overflow: hidden;
@@ -369,7 +380,7 @@ section {
 }
 
 .section-title h2::before {
-  content: '';
+  content: "";
   position: absolute;
   display: block;
   width: 120px;
@@ -380,7 +391,7 @@ section {
 }
 
 .section-title h2::after {
-  content: '';
+  content: "";
   position: absolute;
   display: block;
   width: 40px;
@@ -395,8 +406,8 @@ section {
 }
 
 /*--------------------------------------------------------------
-# About
---------------------------------------------------------------*/
+  # About
+  --------------------------------------------------------------*/
 .about .content h3 {
   font-weight: 700;
   font-size: 26px;
@@ -424,8 +435,8 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Facts
---------------------------------------------------------------*/
+  # Facts
+  --------------------------------------------------------------*/
 .facts .count-box {
   padding: 30px 30px 25px 30px;
   margin-top: 30px;
@@ -464,20 +475,20 @@ section {
   font-size: 22px;
 }
 
-em li a{
+em li a {
   color: black;
   transition: 1.5s;
 }
 
-em li a:hover{
+em li a:hover {
   color: #275df1;
-  transition: .5s;
+  transition: 0.5s;
   font-size: 18px;
 }
 
 /*--------------------------------------------------------------
-# Akills
---------------------------------------------------------------*/
+  # Akills
+  --------------------------------------------------------------*/
 .skills .progress {
   height: 50px;
   display: block;
@@ -506,13 +517,13 @@ em li a:hover{
 .skills .progress-bar {
   width: 1px;
   height: 10px;
-  transition: .9s;
+  transition: 0.9s;
   background-color: #0563bb;
 }
 
 /*--------------------------------------------------------------
-# Resume
---------------------------------------------------------------*/
+  # Resume
+  --------------------------------------------------------------*/
 .resume .resume-title {
   font-size: 26px;
   font-weight: 700;
@@ -573,68 +584,81 @@ em li a:hover{
 }
 
 /*--------------------------------------------------------------
-# Projects
---------------------------------------------------------------*/
-
-.swiper {
-  width: 240px;
-  height: 320px;
-}
-
-.swiper-slide {
+  # Projects
+  --------------------------------------------------------------*/
+.flex-column-center {
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
-  border-radius: 18px;
-  font-size: 22px;
+  align-items: center;
+}
+
+.container-scroll > .project {
+  background-size: cover;
+  transition: opacity 0.25s, scale 0.35s;
+  overflow: hidden;
+}
+
+.container-scroll > .multiagentes {
+  background-image: url("../assets/img/Multiagentes.png");
+}
+
+.container-scroll > .percusionatec {
+  background-image: url("../assets/img/Percusionatec.png");
+  border: 0.5px solid black;
+}
+
+.container-scroll > .iot {
+  background-image: url("../assets/img/IOT.png");
+}
+
+.container-scroll > .python-covid {
+  background-image: url("../assets/img/Python-Covid.png");
+}
+
+.container-scroll > .item > .item-image > .scroll-content {
+  visibility: hidden;
+  transition: 0.5s;
+}
+
+.container-scroll > .item:hover > .item-image > .scroll-content {
+  visibility: visible;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 16px;
+  border-radius: 8px;
+  transition: 0.5s;
+}
+
+.scroll-content > .title {
   font-weight: bold;
-  color: #fff;
 }
 
-.swiper-slide:nth-child(1n) {
-  background-color: rgb(206, 17, 17);
+.scroll-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+  height: 30px;
 }
 
-.swiper-slide:nth-child(2n) {
-  background-color: rgb(0, 140, 255);
+.scroll-icon {
+  color: white;
+  font-size: 24px;
+  transition: color 0.5s;
 }
 
-.swiper-slide:nth-child(3n) {
-  background-color: rgb(10, 184, 111);
-}
-
-.swiper-slide:nth-child(4n) {
-  background-color: rgb(211, 122, 7);
-}
-
-.swiper-slide:nth-child(5n) {
-  background-color: rgb(118, 163, 12);
-}
-
-.swiper-slide:nth-child(6n) {
-  background-color: rgb(180, 10, 47);
-}
-
-.swiper-slide:nth-child(7n) {
-  background-color: rgb(35, 99, 19);
-}
-
-.swiper-slide:nth-child(8n) {
-  background-color: rgb(0, 68, 255);
-}
-
-.swiper-slide:nth-child(9n) {
-  background-color: rgb(218, 12, 218);
-}
-
-.swiper-slide:nth-child(10n) {
-  background-color: rgb(54, 94, 77);
+.scroll-icon:hover {
+  color: #275df1;
+  transition: color 0.5s;
+  cursor: pointer;
 }
 
 /*--------------------------------------------------------------
-
-# Contact
---------------------------------------------------------------*/
+  
+  # Contact
+  --------------------------------------------------------------*/
 .contact .info {
   width: 100%;
   background: #fff;
@@ -670,15 +694,17 @@ em li a:hover{
   color: #728394;
 }
 
-.contact .info .email, .contact .info .phone {
+.contact .info .email,
+.contact .info .phone {
   margin-top: 40px;
 }
 
-.contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
+.contact .info .email:hover i,
+.contact .info .address:hover i,
+.contact .info .phone:hover i {
   background: #0563bb;
   color: #fff;
 }
-
 
 @-webkit-keyframes animate-loading {
   0% {
@@ -699,8 +725,8 @@ em li a:hover{
 }
 
 /*--------------------------------------------------------------
-# Footer
---------------------------------------------------------------*/
+  # Footer
+  --------------------------------------------------------------*/
 #footer {
   background: #f7f8f9;
   color: #6a7783;
@@ -750,12 +776,9 @@ em li a:hover{
   text-decoration: none;
 }
 
-
-
-
 /*--------------------------------------------------------------
-# Journey
---------------------------------------------------------------*/
+  # Journey
+  --------------------------------------------------------------*/
 .journey {
   position: relative;
   padding: 45px 0 15px 0;
@@ -767,7 +790,7 @@ em li a:hover{
 }
 
 .journey .timeline::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 2px;
   background: #0563bb;
@@ -795,7 +818,7 @@ em li a:hover{
 }
 
 .journey .timeline .timeline-item::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 16px;
   height: 16px;
@@ -812,20 +835,20 @@ em li a:hover{
 }
 
 .journey .timeline .timeline-item::before {
-content: '';
-position: absolute;
-width: 0;
-height: 0;
-top: 46px;
-right: 10px;
-z-index: 1;
-border: 10px solid;
-border-color: transparent transparent transparent #dddddd;
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 46px;
+  right: 10px;
+  z-index: 1;
+  border: 10px solid;
+  border-color: transparent transparent transparent #dddddd;
 }
 
 .journey .timeline .timeline-item.right::before {
-left: 10px;
-border-color: transparent #dddddd transparent transparent;
+  left: 10px;
+  border-color: transparent #dddddd transparent transparent;
 }
 
 .journey .timeline .timeline-date {
@@ -855,7 +878,7 @@ border-color: transparent #dddddd transparent transparent;
   background: #ffffff;
   position: relative;
   border-right: 5px solid #dddddd;
-  box-shadow: 0 0 60px rgba(0, 0, 0, .08);
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.08);
 }
 
 .journey .timeline .timeline-item.right .timeline-text {
@@ -883,54 +906,54 @@ border-color: transparent #dddddd transparent transparent;
 
 @media (max-width: 767.98px) {
   .journey .timeline::after {
-      left: 8px;
+    left: 8px;
   }
 
   .journey .timeline .timeline-item {
-      width: 100%;
-      padding-left: 38px;
-  }
-  
-  .journey .timeline .timeline-item.left {
-      padding-right: 0;
-  }
-  
-  .journey .timeline .timeline-item.right {
-      left: 0%;
-      padding-left: 38px;
+    width: 100%;
+    padding-left: 38px;
   }
 
-  .journey .timeline .timeline-item.left::after, 
-  .journey .timeline .timeline-item.right::after {
-      left: 0;
+  .journey .timeline .timeline-item.left {
+    padding-right: 0;
   }
-  
+
+  .journey .timeline .timeline-item.right {
+    left: 0%;
+    padding-left: 38px;
+  }
+
+  .journey .timeline .timeline-item.left::after,
+  .journey .timeline .timeline-item.right::after {
+    left: 0;
+  }
+
   .journey .timeline .timeline-item.left::before,
   .journey .timeline .timeline-item.right::before {
-      left: 18px;
-      border-color: transparent #dddddd transparent transparent;
+    left: 18px;
+    border-color: transparent #dddddd transparent transparent;
   }
-  
+
   .journey .timeline .timeline-item.left .timeline-date,
   .journey .timeline .timeline-item.right .timeline-date {
-      position: relative;
-      top: 0;
-      right: auto;
-      left: 0;
-      text-align: left;
-      margin-bottom: 10px;
+    position: relative;
+    top: 0;
+    right: auto;
+    left: 0;
+    text-align: left;
+    margin-bottom: 10px;
   }
-  
+
   .journey .timeline .timeline-item.left .timeline-text,
   .journey .timeline .timeline-item.right .timeline-text {
-      border-right: none;
-      border-left: 5px solid #dddddd;
+    border-right: none;
+    border-left: 5px solid #dddddd;
   }
 }
 
 /*--------------------------------------------------------------
-# Button Download Resume
---------------------------------------------------------------*/
+  # Button Download Resume
+  --------------------------------------------------------------*/
 
 .btn-dld-resume {
   display: inline-block;
@@ -945,11 +968,12 @@ border-color: transparent #dddddd transparent transparent;
   font-size: 1rem;
   line-height: 1.5;
   border-radius: 0.65rem;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .btn-dld-resume  {
+  .btn-dld-resume {
     transition: none;
   }
 }
@@ -959,12 +983,14 @@ border-color: transparent #dddddd transparent transparent;
   text-decoration: none;
 }
 
-.btn-dld-resume :focus, .btn-dld-resume .focus {
+.btn-dld-resume :focus,
+.btn-dld-resume .focus {
   outline: 0;
   box-shadow: 0 0 0 0.2rem rgba(11, 206, 175, 0.25);
 }
 
-.btn-dld-resume .disabled, .btn-dld-resume :disabled {
+.btn-dld-resume .disabled,
+.btn-dld-resume :disabled {
   opacity: 0.65;
 }
 
@@ -973,7 +999,7 @@ border-color: transparent #dddddd transparent transparent;
 }
 
 a.btn-dld-resume .disabled,
-fieldset:disabled a.btn-dld-resume  {
+fieldset:disabled a.btn-dld-resume {
   pointer-events: none;
 }
 
@@ -988,24 +1014,28 @@ fieldset:disabled a.btn-dld-resume  {
   border-color: var(--primary-color);
 }
 
-.btn-outline-primary:focus, .btn-outline-primary.focus {
+.btn-outline-primary:focus,
+.btn-outline-primary.focus {
   box-shadow: 0 0 0 0.2rem var(--primary-color);
   opacity: 0.5;
 }
 
-.btn-outline-primary.disabled, .btn-outline-primary:disabled {
+.btn-outline-primary.disabled,
+.btn-outline-primary:disabled {
   color: var(--primary-color);
   background-color: transparent;
 }
 
-.btn-outline-primary:not(:disabled):not(.disabled):active, .btn-outline-primary:not(:disabled):not(.disabled).active,
+.btn-outline-primary:not(:disabled):not(.disabled):active,
+.btn-outline-primary:not(:disabled):not(.disabled).active,
 .show > .btn-outline-primary.dropdown-toggle {
   color: #fff;
   background-color: var(--primary-color);
   border-color: var(--primary-color);
 }
 
-.btn-outline-primary:not(:disabled):not(.disabled):active:focus, .btn-outline-primary:not(:disabled):not(.disabled).active:focus,
+.btn-outline-primary:not(:disabled):not(.disabled):active:focus,
+.btn-outline-primary:not(:disabled):not(.disabled).active:focus,
 .show > .btn-outline-primary.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(11, 27, 206, 0.5);
 }

@@ -23,11 +23,11 @@
     <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
     <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  
-    <link href="assets/css/style.css" rel="stylesheet">
-  
-    <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+
+    <!-- Main CSS -->
+    <link href="./styles/style.css" rel="stylesheet">
+    <!-- CSS for the Scroll-->
+    <link href="./styles/scroll.css" rel="stylesheet">
 
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 </head>
@@ -315,31 +315,77 @@
       <!-- ======= End Journey Section ======= -->   
 
       
-      <!-- ======= Projects Section ======= 
+      <!-- ======= Projects Section ======= -->
       <section id="projects" class="projects section-bg">
-          <div class="container">   
-              <div class="section-title">
-              <h2>Projects</h2>
-              </div>
-              <br>
-              <br>
-              <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">Week4 - PacMan Excercise <div><img src="./assets/videos/PacMan Excercise.mp4" alt="" srcset=""></div></div>
-                  <div class="swiper-slide">Slide 2</div>
-                  <div class="swiper-slide">Slide 3</div>
-                  <div class="swiper-slide">Slide 4</div>
-                  <div class="swiper-slide">Slide 5</div>
-                  <div class="swiper-slide">Slide 6</div>
-                  <div class="swiper-slide">Slide 7</div>
-                  <div class="swiper-slide">Slide 8</div>
-                  <div class="swiper-slide">Slide 9</div>
-                  <div class="swiper-slide">Slide 10</div>
+        <div class="container flex-column-center">
+          <div class="section-title">
+            <h2>Projects</h2>
+          </div>
+          <div class="container-scroll">
+            <!-- Project - Multiagentes -->
+            <div class="item project multiagentes flex-column-center">
+              <div class="item-image"> 
+                <div class="scroll-content flex-column-center">
+                  <p class="title">Simulación de Multiagentes</p>
+                  <p class="content">
+                    Simulación de sistema multiagentes realizada con Python dirigida a la optimización de la movilidad urbana en las ciudades de México, relizando una visualización en 3D del ambiente.
+                  </p>
+                  <div class="scroll-icons">
+                    <a href="https://www.youtube.com/watch?v=TUWvesFwduQ&feature=youtu.be" target="_blank"><i class="bx bxl-youtube scroll-icon"></i></a>
+                    <a href="https://github.com/angel012912/multiagent-simulation" target="_blank"><i class="bx bxl-github scroll-icon"></i></a>
+                  </div>
                 </div>
               </div>
-          </div>
+            </div>
+            <!-- Project - Percusionatec -->
+            <div class="item project percusionatec flex-column-center">
+              <div class="item-image"> 
+                <div class="scroll-content flex-column-center">
+                  <p class="title">Percusionatec</p>
+                  <p class="content">
+                    Desarrollo de videojuego interactivo para PAS donde el objetivo principal es enseñar los conceptos básicos de la percusión.
+                  </p>
+                  <div class="scroll-icons">
+                    <a href="https://www.youtube.com/watch?v=3h76vSxbb24" target="_blank"><i class="bx bxl-youtube scroll-icon"></i></a>
+                    <a href="https://github.com/angel012912/PAS-PROJECT" target="_blank"><i class="bx bxl-github scroll-icon"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Project - IOT -->
+            <div class="item project iot flex-column-center">
+              <div class="item-image"> 
+                <div class="scroll-content flex-column-center">
+                  <p class="title">Proyecto de IOT</p>
+                  <p class="content">
+                    Desarollo de una plataforma web capaz de mostrar y consultar datos en tiempo real con la ayuda de un Arduino.
+                  </p>
+                  <div class="scroll-icons">
+                    <!--<a href="" target="_blank"><i class="bx bxl-youtube scroll-icon"></i></a>-->
+                    <a href="https://github.com/angel012912/IOT-Project" target="_blank"><i class="bx bxl-github scroll-icon"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Project - IOT -->
+            <div class="item project python-covid flex-column-center">
+              <div class="item-image"> 
+                <div class="scroll-content flex-column-center">
+                  <p class="title">Analizador de Datos de Covid</p>
+                  <p class="content">
+                  Programa en Python que genera gráficas a cerca de los datos principales de registros de covid almacenados en archivos CSV.
+                  </p>
+                  <div class="scroll-icons">
+                    <!--<a href="" target="_blank"><i class="bx bxl-youtube scroll-icon"></i></a>-->
+                    <a href="https://github.com/angel012912/Project-Covid-Data" target="_blank"><i class="bx bxl-github scroll-icon"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        </div>
       </section>
-      ======= End Portfolio Section ======= -->
+      <!-- ======= End Portfolio Section ======= -->
 
       <!-- ======= Contact Section ======= -->
       <section id="contact" class="contact">
@@ -407,16 +453,5 @@
   <script src="assets/vendor/aos/aos.js"></script>
 
   <script src="assets/js/main.js"></script>
-
-  <!-- Swiper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-
-  <!-- Initialize Swiper -->
-  <script>
-    var swiper = new Swiper(".mySwiper", {
-      effect: "cards",
-      grabCursor: true,
-    });
-  </script>
 </body>
 </html>
