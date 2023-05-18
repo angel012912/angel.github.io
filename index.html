@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Personal Portfolio</title>
+    <title id="header">Portafolio Personal</title>
 
     <meta content="" name="description">
     <meta content="" name="keywords">
@@ -28,16 +28,19 @@
     <link href="./styles/style.css" rel="stylesheet">
     <!-- CSS for the Scroll-->
     <link href="./styles/scroll.css" rel="stylesheet">
+    <!-- CSS for the Language Switch-->
+    <link href="./styles/language-switch.css" rel="stylesheet">
 
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="./assets/js/translate.js" defer></script>
 </head>
-<body>
+<body>  
+
   <!-- ======= Mobile nav toggle button ======= -->
   <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
-
   <!-- ======= Header ======= -->
-  <header id="header" class="d-flex flex-column justify-content-center" data-aos="fade-right">
-      <nav class="nav-menu">
+  <header id="header" class="d-flex flex-column justify-content-center" data-aos="fade-right">  
+    <nav class="nav-menu">
       <ul>
           <li class="active"><a href="#hero"><i class="bx bxs-home"></i> <span>Inicio</span></a></li>
           <li><a href="#about"><i class="bx bxs-user"></i> <span>¿Quién Soy?</span></a></li>
@@ -51,15 +54,21 @@
   <!-- ======= End Header ======= -->
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex flex-column justify-content-center">
-      <div class="container" data-aos="zoom-in" data-aos-delay="100">
-      <h1 style="color:white">Angel Garcia</h1>
-      <p style="color: white;">Soy un <span class="typed" data-typed-items="Estudiante., Desarrollador de Software., Apasionado de la Tecnología.,"></span></p>
-      <div class="social-links">
-          <a href="https://www.linkedin.com/in/angel-garcia-011197227/" class="linkedin" target="_blank"><i class="bx bxl-linkedin"></i></a>
-          <a href="https://github.com/angel012912" class="github" target="_blank"><i class="bx bxl-github"></i></a>
-          <a href="https://wa.me/5513589088?text=Hola+Angel!+Mucho+gusto+en+conocerte%2c+soy+" target="_blank" class="whatsapp"><i class='bx bxl-whatsapp'></i></a>
-      </div>
+  <section id="hero" class="d-flex flex-column justify-content-center">  
+        <div class="container" data-aos="zoom-in" data-aos-delay="100">
+        <h1 style="color:white">Angel Garcia</h1>
+        <p style="color: white;">Soy un <span class="typed" data-typed-items="Estudiante., Desarrollador de Software., Apasionado de la Tecnología.,"></span></p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/angel-garcia-011197227/" class="linkedin" target="_blank"><i class="bx bxl-linkedin"></i></a>
+            <a href="https://github.com/angel012912" class="github" target="_blank"><i class="bx bxl-github"></i></a>
+            <a href="https://wa.me/5513589088?text=Hola+Angel!+Mucho+gusto+en+conocerte%2c+soy+" target="_blank" class="whatsapp"><i class='bx bxl-whatsapp'></i></a>
+        </div>
+        <div class="toggle language-rollover" id="switch-language">
+          <input id="language-input" type="checkbox" class="input-switch"/>
+          <label class="toggle-item" for="language-input">
+              <div class="circle-div"></div>
+          </label>
+        </div>
       </div>
   </section>
   <!-- ======= End Hero ======= -->
