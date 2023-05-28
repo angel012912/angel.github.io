@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title id="header">Portafolio Personal</title>
+    <title id="header"></title>
 
     <meta content="" name="description">
     <meta content="" name="keywords">
@@ -33,6 +33,7 @@
 
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <script src="./assets/js/translate.js" defer></script>
+    <script src="./assets/js/typed.js"></script>
 </head>
 <body>  
 
@@ -42,12 +43,12 @@
   <header id="header" class="d-flex flex-column justify-content-center" data-aos="fade-right">  
     <nav class="nav-menu">
       <ul>
-          <li class="active"><a href="#hero"><i class="bx bxs-home"></i> <span>Inicio</span></a></li>
-          <li><a href="#about"><i class="bx bxs-user"></i> <span>¿Quién Soy?</span></a></li>
-          <li><a href="#facts"><i class="bx bxs-bolt-circle"></i> <span>Conoce más</span></a></li>
-          <li><a href="#skills"><i class="bx bxs-bulb"></i> <span>Habilidades</span></a></li>
-          <li><a href="#journey"><i class="bx bx-stats"></i> <span>Mi viaje ...</span></a></li>
-          <li><a href="#projects"><i class="bx bx-book-reader"></i> <span>Proyectos</span></a></li>
+          <li class="active"><a href="#hero"><i class="bx bxs-home"></i> <span id="nav-menu-home"></span></a></li>
+          <li><a href="#about"><i class="bx bxs-user"></i> <span id="nav-menu-about-me"></span></a></li>
+          <li><a href="#facts"><i class="bx bxs-bolt-circle"></i> <span id="nav-menu-know-more"></span></a></li>
+          <li><a href="#skills"><i class="bx bxs-bulb"></i> <span id="nav-menu-skills"></span></a></li>
+          <li><a href="#journey"><i class="bx bx-stats"></i> <span id="nav-menu-trip"></span></a></li>
+          <li><a href="#projects"><i class="bx bx-book-reader"></i> <span id="nav-menu-projects"></span></a></li>
       </ul>
       </nav>
   </header>
@@ -56,8 +57,20 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex flex-column justify-content-center">  
         <div class="container" data-aos="zoom-in" data-aos-delay="100">
-        <h1 style="color:white">Angel Garcia</h1>
-        <p style="color: white;">Soy un <span class="typed" data-typed-items="Estudiante., Desarrollador de Software., Apasionado de la Tecnología.,"></span></p>
+        <div class="hide" id="hero-es">
+          <h1 style="color:white">Angel Garcia</h1>
+          <p style="color: white;">
+            <span id="hero-description-title">Soy un </span>
+            <span class="typed typed-spanish" id="hero-description-typed" data-typed-items="Estudiante., Desarrollador de Software., Apasionado por la tecnología.," ></span>
+          </p>
+        </div>
+        <div class="hide" id="hero-en">
+          <h1 style="color:white">Angel Garcia</h1>
+          <p style="color: white;">
+            <span id="hero-description-title">I'm a </span>
+            <span class="typed typed-english" id="hero-description-typed" data-typed-items="Student., Software Developer., Passionate about technology.," ></span>
+          </p>
+        </div>
         <div class="social-links">
             <a href="https://www.linkedin.com/in/angel-garcia-011197227/" class="linkedin" target="_blank"><i class="bx bxl-linkedin"></i></a>
             <a href="https://github.com/angel012912" class="github" target="_blank"><i class="bx bxl-github"></i></a>
@@ -80,35 +93,31 @@
         <div class="container">
 
           <div class="section-title" data-aos="fade-up">
-            <h2>¿Quién Soy?</h2>
+            <h2 id="about-title"></h2>
           </div>
           <div class="row">
             <div class="col-lg-4" data-aos="fade-up-right">
               <div class="img-fluid profile-image"></div>
             </div>
             <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-up-left">
-              <u><h3>Desarrollador de Software.</h3></u>
+              <u><h3 id="about-subtitle"></h3></u>
               <div class="about-description">
-                <p class="font-italic">
-                  Soy un estudiante apasionado de la Tecnología y la Programación. Mi pasión por la programación se debe a que podemos llevar a la realidad cualquier idea que tengamos utilizando la tecnología. Asimismo, estoy comprometido a hacer todo de manera excepcional con el propósito de contribuir con el mayor valor a través de mis conocimientos y mis habilidades en cualquier campo.
-                </p>
-                <p class="font-italic">
-                  Entusiasta de fortalecer mis capacidades, conocimientos y habilidades a través de proyectos personales, cursos valiosos o trabajos independientes.
-                </p>
+                <p class="font-italic" id="about-description1"></p>
+                <p class="font-italic" id="about-description2"></p>
               </div>
               <div class="row">
                 <div class="col-lg-6">
                   <ul>
-                    <li><i class="icofont-rounded-right"></i> <strong>Universidad:</strong> ITESM</li>
+                    <li><i class="icofont-rounded-right"></i> <strong><span id="about-university"></span></strong> ITESM</li>
                   </ul>
                 </div>
                 <div class="col-lg-6">
                   <ul>
-                    <li><i class="icofont-rounded-right"></i> <strong>Ciudad:</strong> Estado de México, México</li>
+                    <li><i class="icofont-rounded-right"></i> <strong><span id="about-city"></span></strong> Estado de México, México</li>
                   </ul>
                 </div>
               </div>
-              <a href="./assets/CV.pdf" target="_blank" class="btn-dld-resume btn-outline-primary">Currículum</a>
+              <a target="_blank" class="btn-dld-resume btn-outline-primary" id="about-resume"></a>
             
             </div>
           </div>
@@ -119,24 +128,23 @@
       <!-- ======= Facts Section ======= -->
       <section id="facts" class="facts">
         <div class="container" data-aos="fade-up">
-
           <div class="section-title">
-            <h2>Conoce más</h2>
+            <h2 id="facts-title"></h2>
           </div>
 
           <div class="row">
             <div class="col-lg-6 col-md-6">
               <div class="count-box">
                 <i class="bx bxs-graduation"></i>
-                <p>Logros</p>
+                <p id="facts-achievements-title"></p>
                 <br>
                 <ul>
                   <em>
                     <li>
-                      <a href="https://xpro.mit.edu/programs/program-v1:xPRO+PCCx+R1/">Certificado Profesional de Programacion: Desarrollador Full Stack con MERN</a>
+                      <a href="https://xpro.mit.edu/programs/program-v1:xPRO+PCCx+R1/" id="facts-achievements-description1"></a>
                     </li>
                     <li>
-                      <a href="https://fb.watch/hwLxoOpGF3/">Primer Lugar en el Hackathon Nacional por parte de ITESM Campus Puebla: Discorruption 2022</a>
+                      <a href="https://fb.watch/hwLxoOpGF3/" id="facts-achievements-description2"></a>
                     </li>
                   </em>
                 </ul>
@@ -146,16 +154,12 @@
             <div class="col-lg-6 col-md-6 mt-5 mt-lg-0">
               <div class="count-box">
                 <i class="bx bx-happy-beaming"></i>
-                <p>Intereses</p>
+                <p id="facts-interests-title"></p>
                 <br>
                 <ul>
                   <em>
-                    <li>
-                      Desarrollo de soluciones a problemas reales usando tecnologías de vanguardia.
-                    </li>
-                    <li>
-                      Entusiaste de aprender nuevas tecnologías y mejorar mis habilidades.
-                    </li>
+                    <li id="facts-interests-description1"></li>
+                    <li id="facts-interests-description2"></li>
                   </em>
                 </ul>
               </div>
@@ -170,7 +174,7 @@
         <div class="container">
 
           <div class="section-title">
-            <h2>Habilidades</h2>
+            <h2 id="skills-title"></h2>
           </div>
 
           <div class="row skills-content">
@@ -260,62 +264,52 @@
           <div class="container">
     
               <div class="section-title">
-              <h2>Mi viaje ...</h2>
+              <h2 id="journey-title"></h2>
               </div>
 
               <div class="timeline">
                   <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
                       <div class="timeline-text">
                           <div class="timeline-date">2020</div>
-                          <h2> Licenciatura en Ingenieria en Tecnologias Computacionales - ITESM</h2>
-                          <p> Comencé mi carrera y descubrí mi verdadera pasión, la programación.</p>
+                          <h2 id="journey-event1-title"></h2>
+                          <p id="journey-event1-description"></p>
                       </div>
                   </div>
                   <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
                       <div class="timeline-text">
                           <div class="timeline-date">2021</div>
-                          <h2>Concurso ICPC México</h2>
-                          <p>
-                            Participé por primera vez en el concurso ICPC, aprendí a trabajar bajo presión y en equipo.  
-                          </p>
+                          <h2 id="journey-event2-title"></h2>
+                          <p id="journey-event2-description"></p>
                       </div>
                   </div>
                   <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
                       <div class="timeline-text">
                           <div class="timeline-date">2022</div>
-                          <h2>Certificado de Desarrollo Fullstack - MITxPRO</h2>
+                          <h2 id="journey-event3-title"></h2>
                           <h4>Feb-Nov</h4>
-                          <p>
-                            Started my journey as a fullstack developer, I learned the basics of web development and how to build a fullstack application.
-                          </p>
+                          <p id="journey-event3-description"></p>
                       </div>
                   </div>  
                   <div class="timeline-item right wow slideInLeft" data-wow-delay="0.1s">
                     <div class="timeline-text">
                         <div class="timeline-date">2022</div>
-                        <h2>Hackaton ITESM: Discorruption 2022</h2>
-                        <p>
-                          Obtuvé el primer lugar en el hackaton de mi universidad, aprendí a trabajar bajo presión y a desarrollar una aplicación en un tiempo limitado.
-                        </p>
+                        <h2 id="journey-event4-title"></h2>
+                        <p id="journey-event4-description"></p>
                     </div>
                   </div> 
                   <div class="timeline-item left wow slideInRight" data-wow-delay="0.1s">
                     <div class="timeline-text">
                         <div class="timeline-date">2022</div>
-                        <h2>Desarrollo de una plataforma personalizada para Kabale S.A de C.V</h2>
-                        <h4>March-September</h4>
-                        <p>
-                          Aprendí a manejar un proyecto completo, a negociar y a saber darle valor a mi trabajo.
-                        </p>
+                        <h2 id="journey-event5-title"></h2>
+                        <h4>Mar-Sept</h4>
+                        <p id="journey-event5-description"></p>
                     </div>
                   </div>
                   <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
                     <div class="timeline-text">
                         <div class="timeline-date">2022</div>
-                        <h2>Concurso ICPC México</h2>
-                        <p>
-                          Participé por segunda vez en el concurso ICPC, mejorando así mis habilidades de resolución de problemas y trabajo en equipo.
-                        </p>
+                        <h2 id="journey-event6-title"></h2>
+                        <p id="journey-event6-description"></p>
                     </div>
                   </div> 
               </div>
@@ -328,17 +322,15 @@
       <section id="projects" class="projects section-bg">
         <div class="container flex-column-center">
           <div class="section-title">
-            <h2>Projects</h2>
+            <h2 id="projects-title"></h2>
           </div>
           <div class="container-scroll">
             <!-- Project - Multiagentes -->
             <div class="item project multiagentes flex-column-center">
               <div class="item-image"> 
                 <div class="scroll-content flex-column-center">
-                  <p class="title">Simulación de Multiagentes</p>
-                  <p class="content">
-                    Simulación de sistema multiagentes realizada con Python dirigida a la optimización de la movilidad urbana, relizando una visualización en 3D del ambiente.
-                  </p>
+                  <p class="title" id="projects-project1-title"></p>
+                  <p class="content" id="projects-project1-description"></p>
                   <div class="scroll-icons">
                     <a href="https://www.youtube.com/watch?v=TUWvesFwduQ&feature=youtu.be" target="_blank"><i class="bx bxl-youtube scroll-icon"></i></a>
                     <a href="https://github.com/angel012912/multiagent-simulation" target="_blank"><i class="bx bxl-github scroll-icon"></i></a>
@@ -350,10 +342,8 @@
             <div class="item project percusionatec flex-column-center">
               <div class="item-image"> 
                 <div class="scroll-content flex-column-center">
-                  <p class="title">Percusionatec</p>
-                  <p class="content">
-                    Desarrollo de videojuego interactivo para PAS donde el objetivo principal es enseñar los conceptos básicos de la percusión.
-                  </p>
+                  <p class="title" id="projects-project2-title"></p>
+                  <p class="content" id="projects-project2-description"></p>
                   <div class="scroll-icons">
                     <a href="https://www.youtube.com/watch?v=3h76vSxbb24" target="_blank"><i class="bx bxl-youtube scroll-icon"></i></a>
                     <a href="https://github.com/angel012912/PAS-PROJECT" target="_blank"><i class="bx bxl-github scroll-icon"></i></a>
@@ -365,10 +355,8 @@
             <div class="item project iot flex-column-center">
               <div class="item-image"> 
                 <div class="scroll-content flex-column-center">
-                  <p class="title">Proyecto de IOT</p>
-                  <p class="content">
-                    Desarollo de una plataforma web capaz de mostrar y consultar datos en tiempo real con la ayuda de un Arduino.
-                  </p>
+                  <p class="title" id="projects-project3-title"></p>
+                  <p class="content" id="projects-project3-description"></p>
                   <div class="scroll-icons">
                     <a href="https://www.youtube.com/watch?v=2LWXkg1p5Rk" target="_blank"><i class="bx bxl-youtube scroll-icon"></i></a>
                     <a href="https://github.com/angel012912/IOT-Project" target="_blank"><i class="bx bxl-github scroll-icon"></i></a>
@@ -376,14 +364,12 @@
                 </div>
               </div>
             </div>
-            <!-- Project - IOT -->
+            <!-- Project - Python Covid Data -->
             <div class="item project python-covid flex-column-center">
               <div class="item-image"> 
                 <div class="scroll-content flex-column-center">
-                  <p class="title">Analizador de Datos de Covid</p>
-                  <p class="content">
-                  Programa en Python que genera gráficas a cerca de los datos principales de registros de covid almacenados en archivos CSV.
-                  </p>
+                  <p class="title" id="projects-project4-title"></p>
+                  <p class="content" id="projects-project4-description"></p>
                   <div class="scroll-icons">
                     <!--<a href="" target="_blank"><i class="bx bxl-youtube scroll-icon"></i></a>-->
                     <a href="https://github.com/angel012912/Project-Covid-Data" target="_blank"><i class="bx bxl-github scroll-icon"></i></a>
@@ -391,13 +377,12 @@
                 </div>
               </div>
             </div>
+            <!-- Project - POO Streaming Service Simulator -->
             <div class="item project streaming-poo flex-column-center">
               <div class="item-image"> 
                 <div class="scroll-content flex-column-center">
-                  <p class="title">Simulador de Servicio de Streaming usando POO</p>
-                  <p class="content">
-                    Desarrollo de un software que simula el catálogo de un servicio de Streaming usando Programación Orientada a Objetos.
-                  </p>
+                  <p class="title" id="projects-project5-title"></p>
+                  <p class="content" id="projects-project5-description"></p>
                   <div class="scroll-icons">
                     <!--<a href="" target="_blank"><i class="bx bxl-youtube scroll-icon"></i></a>-->
                     <a href="https://github.com/angel012912/Streaming-Service-Project" target="_blank"><i class="bx bxl-github scroll-icon"></i></a>
@@ -405,13 +390,12 @@
                 </div>
               </div>
             </div>
+            <!-- Project - POO Inventory Software Simulator -->
             <div class="item project inventory-poo flex-column-center">
               <div class="item-image"> 
                 <div class="scroll-content flex-column-center">
-                  <p class="title">Software para Inventario usando POO</p>
-                  <p class="content">
-                    Desarrollo de un software para una tienda de ropa usando Programación Orientada a Objetos.
-                  </p>
+                  <p class="title" id="projects-project6-title"></p>
+                  <p class="content" id="projects-project6-description"></p>
                   <div class="scroll-icons">
                     <!--<a href="" target="_blank"><i class="bx bxl-youtube scroll-icon"></i></a>-->
                     <a href="https://github.com/angel012912/Store-Inventory-Project" target="_blank"><i class="bx bxl-github scroll-icon"></i></a>
@@ -419,13 +403,12 @@
                 </div>
               </div>
             </div>
+            <!-- Project - Data Structure Integrating Project -->
             <div class="item project data-structure flex-column-center">
               <div class="item-image"> 
                 <div class="scroll-content flex-column-center">
-                  <p class="title">Proyecto Integrador Estructura de Datos</p>
-                  <p class="content">
-                    Implementacion de la mayoria de las estructuras de datos y algoritmos de busqueda para demostrar mi entendimiento de los temas vistos sobre estructura de datos y algoritmos.
-                  </p>
+                  <p class="title" id="projects-project7-title"></p>
+                  <p class="content" id="projects-project7-description"></p>
                   <div class="scroll-icons">
                     <!--<a href="" target="_blank"><i class="bx bxl-youtube scroll-icon"></i></a>-->
                     <a href="https://github.com/angel012912/Data-Structure-Project" target="_blank"><i class="bx bxl-github scroll-icon"></i></a>
@@ -433,13 +416,12 @@
                 </div>
               </div>
             </div>
+            <!-- Project - Von Neuman -->
             <div class="item project von-neuman flex-column-center">
               <div class="item-image"> 
                 <div class="scroll-content flex-column-center">
-                  <p class="title">Máquina VonNeuman</p>
-                  <p class="content">
-                    Desarrollo de una máquina de VonNeuman usando el lenguaje de programación Clojure.
-                  </p>
+                  <p class="title" id="projects-project8-title"></p>
+                  <p class="content" id="projects-project8-description"></p>
                   <div class="scroll-icons">
                     <a href="https://youtu.be/vu9hkMsGC-I" target="_blank"><i class="bx bxl-youtube scroll-icon"></i></a>
                     <a href="https://github.com/angel012912/VonNeuman-Clojure" target="_blank"><i class="bx bxl-github scroll-icon"></i></a>
@@ -447,13 +429,12 @@
                 </div>
               </div>
             </div>
+            <!-- Project - Alpha Beta Prunning -->
             <div class="item project alpha-beta-prunning flex-column-center">
               <div class="item-image"> 
                 <div class="scroll-content flex-column-center">
-                  <p class="title">Alpha Beta Prunning</p>
-                  <p class="content">
-                    Implementacion de un algoritmo de Alpha Beta Prunning para un juego de oruga.
-                  </p>
+                  <p class="title" id="projects-project9-title"></p>
+                  <p class="content" id="projects-project9-description"></p>
                   <div class="scroll-icons">
                     <!--<a href="https://youtu.be/vu9hkMsGC-I" target="_blank"><i class="bx bxl-youtube scroll-icon"></i></a>-->
                     <a href="https://github.com/angel012912/IntegratingProject-AdvancedAlgorithms" target="_blank"><i class="bx bxl-github scroll-icon"></i></a>
@@ -461,13 +442,12 @@
                 </div>
               </div>
             </div>
+            <!-- Project - Avizapan App -->
             <div class="item project avizapan-app flex-column-center">
               <div class="item-image"> 
                 <div class="scroll-content flex-column-center">
-                  <p class="title">Aplicacion de Android para Alertas</p>
-                  <p class="content">
-                    Desarrollo de una aplicación de Android para alertas de la comunidad de Atizapan.
-                  </p>
+                  <p class="title" id="projects-project10-title"></p>
+                  <p class="content" id="projects-project10-description"></p>
                   <div class="scroll-icons">
                     <!--<a href="https://youtu.be/vu9hkMsGC-I" target="_blank"><i class="bx bxl-youtube scroll-icon"></i></a>-->
                     <a href="https://github.com/angel012912/Avizapan2_rep" target="_blank"><i class="bx bxl-github scroll-icon"></i></a>
@@ -475,13 +455,12 @@
                 </div>
               </div>
             </div>
+            <!-- Project - Avizapan Page -->
             <div class="item project avizapan-page flex-column-center">
               <div class="item-image"> 
                 <div class="scroll-content flex-column-center">
-                  <p class="title">Plataforma Web para Proteccion Civil</p>
-                  <p class="content">
-                    Desarrollo de una plataforma en REACT para el equipo de Proteccion Civil de Atizapan.
-                  </p>
+                  <p class="title" id="projects-project11-title"></p>
+                  <p class="content" id="projects-project11-description"></p>
                   <div class="scroll-icons">
                     <!--<a href="https://youtu.be/vu9hkMsGC-I" target="_blank"><i class="bx bxl-youtube scroll-icon"></i></a>-->
                     <a href="https://github.com/angel012912/AvizapanProyect-WebPage" target="_blank"><i class="bx bxl-github scroll-icon"></i></a>
@@ -500,7 +479,7 @@
   <!-- ======= Footer ======= -->
   <footer id="footer">
     <div class="container" data-aos="fade-down">
-        <h3>Desarrollado por: </h3>
+        <h3 id="footer-title"></h3>
         <h4>Angel Garcia</h4>
         <div class="social-links">
             <a href="https://www.linkedin.com/in/angel-garcia-011197227/" class="linkedin" target="_blank"><i class="bx bxl-linkedin"></i></a>

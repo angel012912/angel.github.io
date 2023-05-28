@@ -11,10 +11,22 @@
   });
 
   // Hero typed
-  if ($('.typed').length) {
-    var typed_strings = $(".typed").data('typed-items');
-    typed_strings = typed_strings.split(',')
-    new Typed('.typed', {
+  // Spanish
+  if ($('.typed-spanish').length) {
+    var typed_strings = $(".typed-spanish").data('typed-items');
+    typed_strings = typed_strings.split(',');
+    new Typed('.typed-spanish', {
+      strings: typed_strings,
+      loop: true,
+      typeSpeed: 100,
+      backSpeed: 50,
+      backDelay: 2000
+    });
+  }
+  if ($('.typed-english').length) {
+    var typed_strings = $(".typed-english").data('typed-items');
+    typed_strings = typed_strings.split(',');
+    new Typed('.typed-english', {
       strings: typed_strings,
       loop: true,
       typeSpeed: 100,
