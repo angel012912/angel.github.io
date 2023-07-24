@@ -304,7 +304,7 @@ function getUserLanguage() {
     if (preferedLanguage) {
         return preferedLanguage;
     }
-    return 'es';
+    return 'en';
 }
 
 function setPreferedLanguage() {
