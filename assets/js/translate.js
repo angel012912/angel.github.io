@@ -109,6 +109,10 @@ const translations = {
                 "title": "Web Platform for Civil Protection",
                 "description": "Development of a REACT platform for the Atizapan Civil Protection team.",
             },
+            "project12": {
+                "title": "Web Platform with Machine Learning Integration",
+                "description": "Development of a REACT platform for the integration of an ML model which predicts the price of a house based on a series of characteristics.",
+            },
         },
         "footer": "Developed by: ",
     },
@@ -221,6 +225,10 @@ const translations = {
                 "title": "Plataforma Web para Proteccion Civil",
                 "description": "Desarrollo de una plataforma en REACT para el equipo de Proteccion Civil de Atizapan.",
             },
+            "project12": {
+                "title": "Plataforma Web con integración de Machine Learning",
+                "description": "Desarrollo de una plataforma en REACT para la integración de un modelo de ML el cual predice el precio de una casa en base a una serie de características.",
+            },
         },
         "footer": "Desarrollado por: ",
     }
@@ -273,28 +281,18 @@ function translateElements(lang) {
     document.getElementById('journey-event6-title').textContent = translations[lang]["journey"]["event6"]["title"];
     document.getElementById('journey-event6-description').textContent = translations[lang]["journey"]["event6"]["description"];
     document.getElementById('projects-title').textContent = translations[lang]["projects"]["title"];
-    document.getElementById('projects-project1-title').textContent = translations[lang]["projects"]["project1"]["title"];
-    document.getElementById('projects-project1-description').textContent = translations[lang]["projects"]["project1"]["description"];
-    document.getElementById('projects-project2-title').textContent = translations[lang]["projects"]["project2"]["title"];
-    document.getElementById('projects-project2-description').textContent = translations[lang]["projects"]["project2"]["description"];
-    document.getElementById('projects-project3-title').textContent = translations[lang]["projects"]["project3"]["title"];
-    document.getElementById('projects-project3-description').textContent = translations[lang]["projects"]["project3"]["description"];
-    document.getElementById('projects-project4-title').textContent = translations[lang]["projects"]["project4"]["title"];
-    document.getElementById('projects-project4-description').textContent = translations[lang]["projects"]["project4"]["description"];
-    document.getElementById('projects-project5-title').textContent = translations[lang]["projects"]["project5"]["title"];
-    document.getElementById('projects-project5-description').textContent = translations[lang]["projects"]["project5"]["description"];
-    document.getElementById('projects-project6-title').textContent = translations[lang]["projects"]["project6"]["title"];
-    document.getElementById('projects-project6-description').textContent = translations[lang]["projects"]["project6"]["description"];
-    document.getElementById('projects-project7-title').textContent = translations[lang]["projects"]["project7"]["title"];
-    document.getElementById('projects-project7-description').textContent = translations[lang]["projects"]["project7"]["description"];
-    document.getElementById('projects-project8-title').textContent = translations[lang]["projects"]["project8"]["title"];
-    document.getElementById('projects-project8-description').textContent = translations[lang]["projects"]["project8"]["description"];
-    document.getElementById('projects-project9-title').textContent = translations[lang]["projects"]["project9"]["title"];
-    document.getElementById('projects-project9-description').textContent = translations[lang]["projects"]["project9"]["description"];
-    document.getElementById('projects-project10-title').textContent = translations[lang]["projects"]["project10"]["title"];
-    document.getElementById('projects-project10-description').textContent = translations[lang]["projects"]["project10"]["description"];
-    document.getElementById('projects-project11-title').textContent = translations[lang]["projects"]["project11"]["title"];
-    document.getElementById('projects-project11-description').textContent = translations[lang]["projects"]["project11"]["description"];
+    // Obtener el array de keys de los proyectos
+    projectKeys = Object.keys(translations[lang]["projects"]);
+    counter = 0;
+    for (let i = 1; i <= projectKeys.length; i++){
+        if (projectKeys[i] == "title" || projectKeys[i] == "description" || !projectKeys[i]){
+            continue;
+        }
+        counter += 1;
+        let projectName = 'project' + counter.toString();
+        document.getElementById('projects-' + projectName + '-title').textContent = translations[lang]["projects"][projectName]["title"];
+        document.getElementById('projects-' + projectName + '-description').textContent = translations[lang]["projects"][projectName]["description"];
+    }
     document.getElementById('footer-title').textContent = translations[lang]["footer"];
 }
 

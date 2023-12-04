@@ -617,6 +617,10 @@ em li a:hover {
   overflow: hidden;
 }
 
+.container-scroll > .mavericks1 {
+  background-image: url("../assets/img/Mavericks1.png");
+}
+
 .container-scroll > .multiagentes {
   background-image: url("../assets/img/Multiagentes.png");
 }
