@@ -64,6 +64,18 @@ const translations = {
                 "title":"ICPC Mexico Contest",
                 "description": "I participated for the second time in the ICPC contest, thus improving my problem solving and teamwork skills."
             },
+            "event7":{
+                "title":"QA Tester Internship at CTIN",
+                "description": "I started my internship as a QA Tester at CTIN, where I learned to work in a team and to test software in a professional environment."
+            },
+            "event8":{
+                "title":"HackMX 2023",
+                "description": "I got first place in the HackMX 2023 hackathon, thus improving my problem solving and teamwork skills."
+            },
+            "event9":{
+                "title":"BEDU Scrum Master Certificate",
+                "description": "I learned the basics of agile methodologies and the main roles involved in a Scrum team."
+            },
         },
         "projects": {
             "title": "Projects",
@@ -181,7 +193,19 @@ const translations = {
             "event6":{
                 "title":"Concurso ICPC México",
                 "description": "Participé por segunda vez en el concurso ICPC, mejorando así mis habilidades de resolución de problemas y trabajo en equipo."
-            }
+            },
+            "event7":{
+                "title":"Concurso ICPC México",
+                "description": "Participé por segunda vez en el concurso ICPC, mejorando así mis habilidades de resolución de problemas y trabajo en equipo."
+            },
+            "event8":{
+                "title":"Concurso ICPC México",
+                "description": "Participé por segunda vez en el concurso ICPC, mejorando así mis habilidades de resolución de problemas y trabajo en equipo."
+            },
+            "event9":{
+                "title":"Concurso ICPC México",
+                "description": "Participé por segunda vez en el concurso ICPC, mejorando así mis habilidades de resolución de problemas y trabajo en equipo."
+            },
         },
         "projects": {
             "title": "Proyectos",
@@ -286,6 +310,12 @@ function translateElements(lang) {
     document.getElementById('journey-event5-description').textContent = translations[lang]["journey"]["event5"]["description"];
     document.getElementById('journey-event6-title').textContent = translations[lang]["journey"]["event6"]["title"];
     document.getElementById('journey-event6-description').textContent = translations[lang]["journey"]["event6"]["description"];
+    document.getElementById('journey-event7-title').textContent = translations[lang]["journey"]["event7"]["title"];
+    document.getElementById('journey-event7-description').textContent = translations[lang]["journey"]["event7"]["description"];
+    document.getElementById('journey-event8-title').textContent = translations[lang]["journey"]["event8"]["title"];
+    document.getElementById('journey-event8-description').textContent = translations[lang]["journey"]["event8"]["description"];
+    document.getElementById('journey-event9-title').textContent = translations[lang]["journey"]["event9"]["title"];
+    document.getElementById('journey-event9-description').textContent = translations[lang]["journey"]["event9"]["description"];
     document.getElementById('projects-title').textContent = translations[lang]["projects"]["title"];
     // Obtener el array de keys de los proyectos
     projectKeys = Object.keys(translations[lang]["projects"]);
