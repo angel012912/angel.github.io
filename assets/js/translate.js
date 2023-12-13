@@ -25,7 +25,9 @@ const translations = {
             "achievements": {
                 "title": "Achievements",
                 "description1": "Professional Certificate in Programming: Full Stack Developer with MERN",
-                "description2": "First Place in the National Hackathon by ITESM Campus Puebla: Discorruption 2022"
+                "description2": "1st in the National Hackathon by ITESM Campus Puebla: Discorruption 2022",
+                "description3": "1st Place in the Hackathon by ITESM Campus Ciudad de México: HackMX 2023 ",
+                "description4": "Agile Scrum Master Roles Certificate by BEDU",
             },
             "interests": {
                 "title": "Interests",
@@ -141,7 +143,9 @@ const translations = {
             "achievements": {
                 "title": "Logros",
                 "description1": "Certificado Profesional de Programacion: Desarrollador Full Stack con MERN",
-                "description2": "Primer Lugar en el Hackathon Nacional por parte de ITESM Campus Puebla: Discorruption 2022"
+                "description2": "Primer Lugar en el Hackathon Nacional por parte de ITESM Campus Puebla: Discorruption 2022",
+                "description3": "Primer Lugar en el Hackathon por parte de ITESM Campus Ciudad de México: HackMX 2023 ",
+                "description4": "Certificado de Roles de Agiles en Scrum Master por parte de BEDU",
             },
             "interests": {
                 "title": "Intereses",
@@ -263,6 +267,8 @@ function translateElements(lang) {
     document.getElementById('facts-achievements-title').textContent = translations[lang]["facts"]["achievements"]["title"];
     document.getElementById('facts-achievements-description1').textContent = translations[lang]["facts"]["achievements"]["description1"];
     document.getElementById('facts-achievements-description2').textContent = translations[lang]["facts"]["achievements"]["description2"];
+    document.getElementById('facts-achievements-description3').textContent = translations[lang]["facts"]["achievements"]["description3"];
+    document.getElementById('facts-achievements-description4').textContent = translations[lang]["facts"]["achievements"]["description4"];
     document.getElementById('facts-interests-title').textContent = translations[lang]["facts"]["interests"]["title"];
     document.getElementById('facts-interests-description1').textContent = translations[lang]["facts"]["interests"]["description1"];
     document.getElementById('facts-interests-description2').textContent = translations[lang]["facts"]["interests"]["description2"];
