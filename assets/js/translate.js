@@ -124,8 +124,20 @@ const translations = {
                 "description": "Development of a REACT platform for the Atizapan Civil Protection team.",
             },
             "project12": {
+                "title": "Smart Campus Platform",
+                "description": "I contributed to the development of a REACT platform designed for the students of the ITESM CEM.",
+            },
+            "project13": {
                 "title": "Web Platform with Machine Learning Integration",
                 "description": "Development of a REACT platform for the integration of an ML model which predicts the price of a house based on a series of characteristics.",
+            },
+            "project14": {
+                "title": "Mobile Application for MODERNA products promotion",
+                "description": "A React Native development for the promotion of MODERNA products.",
+            },
+            "project15": {
+                "title": "Mobile Application for OXXO",
+                "description": "A React Native development that, through the development and integration of an AI model, provides assistance to collaborators to optimize their work in stores.",
             },
         },
         "footer": "Developed by: ",
@@ -254,8 +266,20 @@ const translations = {
                 "description": "Desarrollo de una plataforma en REACT para el equipo de Proteccion Civil de Atizapan.",
             },
             "project12": {
+                "title": "Plataforma Smart Campus",
+                "description": "Contribuí al desarrollo de una plataforma en REACT diseñada para los alumnos del ITESM CEM.",
+            },
+            "project13": {
                 "title": "Plataforma Web con integración de Machine Learning",
                 "description": "Desarrollo de una plataforma en REACT para la integración de un modelo de ML el cual predice el precio de una casa en base a una serie de características.",
+            },
+            "project14": {
+                "title": "Aplicación Movil para promocion de productos MODERNA",
+                "description": "Se desarrolló una aplicación móvil con React Native para la promoción de productos de la empresa MODERNA.",
+            },
+            "project15": {
+                "title": "Aplicación Móvil para OXXO",
+                "description": "Se desarrolló una aplicación móvil utilizando React Native que, mediante el desarrollo e integración de un modelo de IA, brinda asistencia a los colaboradores para optimizar sus labores en las tiendas.",
             },
         },
         "footer": "Desarrollado por: ",

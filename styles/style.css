@@ -617,8 +617,22 @@ em li a:hover {
   overflow: hidden;
 }
 
+
+.container-scroll > .shelfMate {
+  background-image: url("../assets/img/ShelfMate.png");
+}
+
 .container-scroll > .mavericks1 {
   background-image: url("../assets/img/Mavericks1.png");
+}
+
+
+.container-scroll > .hackMx {
+  background-image: url("../assets/img/HackMx.png");
+}
+
+.container-scroll > .smart-campus {
+  background-image: url("../assets/img/SmartCampus.png");
 }
 
 .container-scroll > .multiagentes {
