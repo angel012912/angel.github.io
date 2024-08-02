@@ -25,9 +25,11 @@ const translations = {
             "achievements": {
                 "title": "Achievements",
                 "description1": "Professional Certificate in Programming: Full Stack Developer with MERN",
-                "description2": "1st in the National Hackathon by ITESM Campus Puebla: Discorruption 2022",
-                "description3": "1st Place in the Hackathon by ITESM Campus Ciudad de México: HackMX 2023 ",
+                "description2": "1st Place in the National Hackathon by ITESM Campus Puebla: Discorruption 2022",
+                "description3": "1st Place in the Regional Hackathon by ITESM Campus Ciudad de México: HackMX 2023 ",
                 "description4": "Agile Scrum Master Roles Certificate by BEDU",
+                "description5": "3rd Place in the National Hackathon by ITESM Campus Monterrey: DSC Datathon 2024",
+                "description6": "Outstanding performance in the CENEVAL test",
             },
             "interests": {
                 "title": "Interests",
@@ -168,8 +170,10 @@ const translations = {
                 "title": "Logros",
                 "description1": "Certificado Profesional de Programacion: Desarrollador Full Stack con MERN",
                 "description2": "Primer Lugar en el Hackathon Nacional por parte de ITESM Campus Puebla: Discorruption 2022",
-                "description3": "Primer Lugar en el Hackathon por parte de ITESM Campus Ciudad de México: HackMX 2023 ",
+                "description3": "Primer Lugar en el Hackathon Regional por parte de ITESM Campus Ciudad de México: HackMX 2023 ",
                 "description4": "Certificado de Roles de Agiles en Scrum Master por parte de BEDU",
+                "description5": "Tercer Lugar en el Hackathon Nacional por parte de ITESM Campus Monterrey: DSC Datathon 2024",
+                "description6": "Desempeño sobresaliente en la prueba CENEVAL",
             },
             "interests": {
                 "title": "Intereses",
@@ -317,6 +321,8 @@ function translateElements(lang) {
     document.getElementById('facts-achievements-description2').textContent = translations[lang]["facts"]["achievements"]["description2"];
     document.getElementById('facts-achievements-description3').textContent = translations[lang]["facts"]["achievements"]["description3"];
     document.getElementById('facts-achievements-description4').textContent = translations[lang]["facts"]["achievements"]["description4"];
+    document.getElementById('facts-achievements-description5').textContent = translations[lang]["facts"]["achievements"]["description5"];
+    document.getElementById('facts-achievements-description6').textContent = translations[lang]["facts"]["achievements"]["description6"];
     document.getElementById('facts-interests-title').textContent = translations[lang]["facts"]["interests"]["title"];
     document.getElementById('facts-interests-description1').textContent = translations[lang]["facts"]["interests"]["description1"];
     document.getElementById('facts-interests-description2').textContent = translations[lang]["facts"]["interests"]["description2"];
